@@ -6,3 +6,11 @@ body{
     background-color: rgb(196, 196, 196);
     color:rgb(28, 28, 28);
 }
+
+table, tr, th, td, caption{
+    border: 1px solid rgb(41, 40, 40);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    padding: 0.5rem;
+} 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Me">
+    <meta name="author" content="Manisha">
     <title>My first page</title>
     <link rel="icon" href="logos-png.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
@@ -11,13 +11,9 @@
 
 <body>
     <header>
-
         <h1>Hi there..! This is Manisha</h1>
-
         <h4>Learning HTML concepts.</h4>
-
         <hr>
-
         <nav aria-labelledby="primary-navigation">
             <h3 id="primary-navigation">Lists</h3>
             <ul>
@@ -30,8 +26,6 @@
     </header>
 
     <main>
-
-
         <p><a href="aboutme.html">About me</a></p>
         <img src="/img/htmlogo.png" alt="html logo" title="html" width="150" height="150">
 
@@ -41,69 +35,111 @@
         </figure>
 
         <p>
-            I have learned from YouTube channel click the <a
-                href="https://www.youtube.com/watch?v=tfN9gPFmUfA&list=PLla-GdVgzZZV-z0Gxc7rkrV4cuqYSNZMy">link</a> and
-            the
-            resource I have learned is <abbr title="Mozilla Developer Network">MDN</abbr>
+            I have learned from YouTube channel <a href="https://www.youtube.com/watch?v=tfN9gPFmUfA&list=PLla-GdVgzZZV-z0Gxc7rkrV4cuqYSNZMy">Html course</a> and
+            the resource I have learned is <abbr title="Mozilla Developer Network">MDN</abbr>
         </p>
+
+        <table>
+            <caption>HTML Course concepts</caption>
+            <thead>
+                <tr>
+                    <td> &nbsp; </td>
+                    <th scope="col">Html Concepts</th>
+                    <th scope="col">Time duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Setup and installation</th>
+                    <td>VS code installation and html setup</td>
+                    <td><time datetime="01:00">one hour</time></td>
+                </tr>
+                <tr>
+                    <th scope="row">Basics</th>
+                    <td>Text basics</td>
+                    <td><time datetime="00:30">half hour</time></td>
+                </tr>
+                <tr>
+                    <th scope="row">Elements</th>
+                    <td>Head and body elements</td>
+                    <td><time datetime="00:30">half hour</time></td>
+                </tr>
+                <tr>
+                    <th scope="row">Spacing</th>
+                    <td rowspan="2">All other concepts</td>
+                    <td><time datetime="02:00">two hours</time></td>
+                </tr>
+                <tr>
+                    <th scope="row">Summary</th>
+                    <td><time datetime="01:00">one hour</time></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">After completing this course, you will be a Master in HTML</td>
+                </tr>
+            </tfoot>
+        </table>
 
         <figure>
             <figcaption>Example of HTML code</figcaption>
             <code>&lt;h1&gt;Hello world&lt;/h1&gt;</code>
         </figure>
 
-        <section id="ol">
-            <h2>Ordered List</h2>
-            <ol>
-                <li>Setup and head, body elements</li>
-                <li>Text basics</li>
-                <li>Elements</li>
-                <li>White spacing, inline and block elements</li>
-                <li>HTML attribute</li>
-            </ol>
-        </section>
+        <article>
+            <h2>List Examples</h2>
+            <section id="ol">
+                <h3>Ordered List</h3>
+                <ol>
+                    <li>Setup and head, body elements</li>
+                    <li>Text basics</li>
+                    <li>Elements</li>
+                    <li>White spacing, inline and block elements</li>
+                    <li>HTML attribute</li>
+                </ol>
+            </section>
 
-        <hr>
+            <hr>
 
-        <section id="ul">
-            <h2>Unordered List</h2>
-            <ul>
-                <li>Setup and head, body elements</li>
-                <li>Text basics</li>
-                <li>Elements</li>
-                <li>White spacing, inline and block elements</li>
-                <li>HTML attribute</li>
-            </ul>
-        </section>
+            <section id="ul">
+                <h3>Unordered List</h3>
+                <ul>
+                    <li>Setup and head, body elements</li>
+                    <li>Text basics</li>
+                    <li>Elements</li>
+                    <li>White spacing, inline and block elements</li>
+                    <li>HTML attribute</li>
+                </ul>
+            </section>
 
-        <hr>
+            <hr>
 
-        <section id="dl">
-            <h2>Description List</h2>
-            <dl>
-                <dt>Setup</dt>
-                <dd>Setup consists of installation of VS Code and basics of HTML.</dd>
+            <section id="dl">
+                <h3>Description List</h3>
+                <dl>
+                    <dt>Setup</dt>
+                    <dd>Setup consists of installation of VS Code and basics of HTML.</dd>
 
-                <dt>Text basics</dt>
-                <dd>Some text basics in HTML.</dd>
+                    <dt>Text basics</dt>
+                    <dd>Some text basics in HTML.</dd>
 
-                <dt>Elements</dt>
-                <dd>Head elements and body elements.</dd>
+                    <dt>Elements</dt>
+                    <dd>Head elements and body elements.</dd>
 
-                <dt>White spacing</dt>
-                <dd>Inline and block elements.</dd>
+                    <dt>White spacing</dt>
+                    <dd>Inline and block elements.</dd>
 
-                <dt>HTML attribute</dt>
-                <dd>Some of the HTML attributes.</dd>
-            </dl>
-        </section>
+                    <dt>HTML attribute</dt>
+                    <dd>Some of the HTML attributes.</dd>
+                </dl>
+            </section>
+        </article>
     </main>
 
     <hr>
     <footer>
         <p><a href="#">Back to top</a></p>
     </footer>
-
 </body>
 
 </html>
