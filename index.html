@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <header>
         <h1>Hi there..! This is Manisha</h1>
         <h4>Learning HTML concepts.</h4>
@@ -42,7 +43,9 @@
         </p>
 
         <table>
+
             <caption>HTML Course concepts</caption>
+
             <thead>
                 <tr>
                     <td> &nbsp; </td>
@@ -50,6 +53,7 @@
                     <th scope="col">Time duration</th>
                 </tr>
             </thead>
+
             <tbody>
                 <tr>
                     <th scope="row">Setup and installation</th>
@@ -76,6 +80,7 @@
                     <td><time datetime="01:00">one hour</time></td>
                 </tr>
             </tbody>
+
             <tfoot>
                 <tr>
                     <td colspan="3">After completing this course, you will be a Master in HTML</td>
@@ -134,19 +139,125 @@
                     <dt>HTML attribute</dt>
                     <dd>Some of the HTML attributes.</dd>
                 </dl>
+
             </section>
+
         </article>
+
         <hr>
+
         <article>
+
             <h2>Contact me</h2>
+
             <p>
                 I would like to contact me..!
             </p>
+
             <form action="https://httpbin.org/get" method="get">
-                <label for="firstName">FirstName:</label>
-                <input type="text" name="firstName" id="firstName" placeholder="name">
+
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="first name" autocomplete="on"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="last name" autocomplete="on"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="your password" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="9125453543" required
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    </p>
+
+                    <p>
+                        <label for="decade">Fav decade:</label>
+                        <input type="number" name="decade" id="decade" min="1900" max="2024" value="2010" step="10"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="role">Choose your role:</label>
+                        <select name="role" id="role">
+
+                            <optgroup label="Full stack role">
+                                <option value="frontend">Frontend</option>
+                                <option value="backend" selected>Backend</option>
+                                <option value="devops">Devops</option>
+                            </optgroup>
+
+                            <optgroup label="Design role">
+                                <option value="ui/ux">UI/UX</option>
+                                <option value="Designer">Designer</option>
+                            </optgroup>
+
+                        </select>
+                    </p>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Choose your fav food</legend>
+                    <p>
+                        <input type="radio" name="food" id="naan">
+                        <label for="naan">Naan</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="panner">
+                        <label for="panner">Panner</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="chickengravy">
+                        <label for="chickengravy">Chicken gravy</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Choose your Pet</legend>
+                    <p>
+                        <input type="checkbox" name="pet" id="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="parrot">
+                        <label for="parrot">Parrot</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Note</legend>
+                    <label for="message">Type your message</label>
+                    <p>
+                        <textarea name="message" id="message" placeholder="type your message" cols="20" rows="10">
+                        </textarea>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
 
             </form>
+
         </article>
 
     </main>
